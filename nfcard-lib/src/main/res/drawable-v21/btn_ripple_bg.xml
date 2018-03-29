@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/primary_light2">
+    <!-- android:color水波纹颜色-->
+    <!--正常显示颜色，android:drawable防止溢出-->
+    <item
+        android:drawable="@drawable/button_bg_blue" />
+</ripple>
