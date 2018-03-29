@@ -3,5 +3,5 @@
 # 效果图
 ![Alt text](https://github.com/kellysong/nfcCard/raw/master/screenshot/Screenshot_1.png)
 ![Alt text](https://github.com/kellysong/nfcCard/raw/master/screenshot/Screenshot_2.png)
-#特别说明
+# 特别说明
 读卡类库是来自开源类库，此次只是做了UI改造。
