@@ -15,13 +15,13 @@ Additional permission under GNU GPL version 3 section 7 */
 
 package com.sinpo.xnfc.card.pboc;
 
-import java.util.ArrayList;
-
 import android.content.res.Resources;
 
 import com.sinpo.xnfc.R;
 import com.sinpo.xnfc.Util;
 import com.sinpo.xnfc.tech.Iso7816;
+
+import java.util.ArrayList;
 /**
  * 
  * 北京市政交通卡
@@ -29,7 +29,7 @@ import com.sinpo.xnfc.tech.Iso7816;
  * @version 1.0.0
  * @filename BeijingMunicipal.java
  * @time 2017年6月27日 下午3:40:11
- * @copyright(C) 2017 深圳市北辰德科技股份有限公司
+ * @copyright(C) 2017 song
  */
 final class BeijingMunicipal extends PbocCard {
 	private final static int SFI_EXTRA_LOG = 4;

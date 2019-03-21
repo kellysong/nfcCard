@@ -15,11 +15,6 @@ Additional permission under GNU GPL version 3 section 7 */
 
 package com.sinpo.xnfc.card;
 
-import java.io.IOException;
-
-import com.sinpo.xnfc.card.pboc.PbocCard;
-import com.sinpo.xnfc.tech.Iso7816;
-
 import android.content.IntentFilter;
 import android.content.res.Resources;
 import android.nfc.NfcAdapter;
@@ -30,12 +25,16 @@ import android.nfc.tech.NfcV;
 import android.os.Parcelable;
 import android.util.Log;
 
+import com.sinpo.xnfc.bean.CardInfo;
+import com.sinpo.xnfc.card.pboc.PbocCard;
+
 public final class CardManager {
 	//private static final String SP = "<br />------------------------------<br /><br />";
 	private static final String SP = "<br />------------------------------</b><br />";
 
 	public static String[][] TECHLISTS;
 	public static IntentFilter[] FILTERS;
+	public static CardInfo cardInfo;
 
 	static {
 		try {
@@ -94,5 +93,13 @@ public final class CardManager {
 		}
 
 		return null;
+	}
+
+	public static void setCardInfo(CardInfo cardInfo) {
+		CardManager.cardInfo = cardInfo;
+	}
+
+	public static CardInfo getCardInfo() {
+		return cardInfo;
 	}
 }

@@ -10,6 +10,7 @@
         android:layout_height="48dp"
         android:background="#03A9F4"
         android:gravity="center">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -23,8 +24,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/ll_title_bar"
-        android:layout_marginTop="3dp"
         android:layout_marginBottom="50dp"
+        android:layout_marginTop="3dp"
         android:orientation="vertical">
 
         <LinearLayout
@@ -57,10 +58,69 @@
             android:scrollbars="none"
             android:visibility="gone">
 
-            <TextView
-                android:id="@+id/board"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_cardName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="深圳通"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+                       <TextView
+                           android:id="@+id/tv_cardNo"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:padding="2dp"
+                           android:layout_weight="1"
+                           android:text="卡号：123456789"
+                           android:textSize="14sp" />
+
+                       <TextView
+                           android:id="@+id/tv_cardBalance"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:gravity="center"
+                           android:layout_weight="2"
+                           android:padding="2dp"
+                           android:text="余额：-4.0"
+                           android:textSize="14sp" />
+                   </LinearLayout>
+
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_cardList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="#ffffff"
+                    android:dividerHeight="1dp"
+                    >
+
+                </ListView>
+            </LinearLayout>
+            <!--<TextView-->
+            <!--android:id="@+id/board"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content" />-->
         </ScrollView>
     </LinearLayout>
 
@@ -70,8 +130,9 @@
         android:layout_height="@dimen/btn_height"
         android:layout_alignParentBottom="true"
         android:background="@drawable/tab_bottom"
-        android:padding="8dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="8dp">
+
         <Button
             android:id="@+id/btnCopy"
             android:layout_width="wrap_content"
@@ -79,27 +140,25 @@
             android:layout_gravity="center"
             android:layout_marginRight="@dimen/btn_margin"
             android:layout_weight="1"
-            android:text="@string/btn_copy"
-            android:textColor="@color/white_color"
             android:background="@drawable/btn_ripple_bg"
-             />
+            android:text="@string/btn_copy"
+            android:textColor="@color/white_color" />
 
         <Button
             android:id="@+id/btnNfc"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_gravity="center"
-            android:layout_weight="1"
-            android:text="@string/btn_nfc"
-            android:textColor="@color/white_color"
-            android:layout_marginRight="5dp"
             android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
             android:background="@drawable/btn_ripple_bg"
-            />
+            android:text="@string/btn_nfc"
+            android:textColor="@color/white_color" />
+
 
         <Button
             android:id="@+id/btnExit"
-            android:textColor="@color/white_color"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_gravity="center"
@@ -107,6 +166,8 @@
             android:layout_weight="1"
             android:background="@drawable/btn_ripple_bg"
             android:text="@string/btn_exit"
-             />
+            android:textColor="@color/white_color" />
+
+
     </LinearLayout>
 </RelativeLayout>

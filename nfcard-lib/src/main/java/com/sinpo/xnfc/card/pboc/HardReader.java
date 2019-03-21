@@ -15,14 +15,14 @@ Additional permission under GNU GPL version 3 section 7 */
 
 package com.sinpo.xnfc.card.pboc;
 
-import java.util.ArrayList;
-
 import android.content.res.Resources;
 
 import com.sinpo.xnfc.R;
 import com.sinpo.xnfc.Util;
 import com.sinpo.xnfc.tech.Iso7816;
 import com.sinpo.xnfc.tech.Iso7816.BerT;
+
+import java.util.ArrayList;
 
 final class HardReader extends PbocCard {
 	public static final byte TMPL_PDR = 0x70; // Payment Directory Entry Record

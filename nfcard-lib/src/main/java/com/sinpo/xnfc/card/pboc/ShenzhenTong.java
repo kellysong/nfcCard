@@ -15,12 +15,12 @@ Additional permission under GNU GPL version 3 section 7 */
 
 package com.sinpo.xnfc.card.pboc;
 
-import java.util.ArrayList;
-
 import android.content.res.Resources;
 
 import com.sinpo.xnfc.R;
 import com.sinpo.xnfc.tech.Iso7816;
+
+import java.util.ArrayList;
 /**
  * 
  * 深圳通实现类，本注释制作说明，源码并非本人写
@@ -28,7 +28,7 @@ import com.sinpo.xnfc.tech.Iso7816;
  * @version 1.0.0
  * @filename ShenzhenTong.java
  * @time 2017年6月27日 下午3:02:53
- * @copyright(C) 2017 深圳市北辰德科技股份有限公司
+ * @copyright(C) 2017 song
  */
 final class ShenzhenTong extends PbocCard {
 	/**

@@ -15,13 +15,13 @@ Additional permission under GNU GPL version 3 section 7 */
 
 package com.sinpo.xnfc.card.pboc;
 
-import java.util.ArrayList;
-
 import android.content.res.Resources;
 
 import com.sinpo.xnfc.R;
 import com.sinpo.xnfc.Util;
 import com.sinpo.xnfc.tech.Iso7816;
+
+import java.util.ArrayList;
 
 /**
  * 
@@ -30,7 +30,7 @@ import com.sinpo.xnfc.tech.Iso7816;
  * @version 1.0.0
  * @filename WuhanTong.java
  * @time 2017年6月27日 下午3:38:02
- * @copyright(C) 2017 深圳市北辰德科技股份有限公司
+ * @copyright(C) 2017 song
  */
 final class WuhanTong extends PbocCard {
 	private final static int SFI_INFO = 5;

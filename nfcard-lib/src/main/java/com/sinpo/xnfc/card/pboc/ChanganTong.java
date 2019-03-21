@@ -15,12 +15,12 @@ Additional permission under GNU GPL version 3 section 7 */
 
 package com.sinpo.xnfc.card.pboc;
 
-import java.util.ArrayList;
-
 import android.content.res.Resources;
 
 import com.sinpo.xnfc.R;
 import com.sinpo.xnfc.tech.Iso7816;
+
+import java.util.ArrayList;
 /**
  * 
  * 长安通
@@ -28,7 +28,7 @@ import com.sinpo.xnfc.tech.Iso7816;
  * @version 1.0.0
  * @filename ChanganTong.java
  * @time 2017年6月27日 下午3:39:40
- * @copyright(C) 2017 深圳市北辰德科技股份有限公司
+ * @copyright(C) 2017 song
  */
 final class ChanganTong extends PbocCard {
 	private final static byte[] DFN_SRV = { (byte) 0xA0, (byte) 0x00,
